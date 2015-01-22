@@ -1,0 +1,25 @@
+from Tkinter import *
+from Tkinter import Ttk
+maineframe= Tk()
+mainframe.title("Feet to Meters")
+mainframe = Ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0,  row=0,  sticky=(N,W, E, S))
+mainframe.coulumnconfigure(0,  weight=1)
+mainframe.rowconfigure(0,  weight=1)
+feet = Intvar()
+meters = Intvar()
+feet_entry = Ttk.Entry(mainframe, width=7, textvariable=feet)
+Ttk.Label( textvariable=meters).grid(column=2, row=2, sticky=(W, E))
+Tkk.Button( text="calculate", command=calculate.grid(column=3, row=3, sticky=W)
+Ttk.Label( text="feet").grid(column=3, row=1, sticky=W)
+Tkk.Label( text="equivalent to".grid(column=1, row=2, sticky=E)
+Tkk.Label( text="meters").grid (column=3, row=2, sticky=W)
+for child in mainframe.winfo_children(): child.grid_configure(padx=5)
+feet_entry. focus()
+root.bind('<Return>", calculate)
+def calcuate(*args):
+  value = float(fleet.get())
+meters.set((0.3048 * 10000.0 + 0.5)/10000.0)
+except ValueError:
+  pass
+root.mainloop()
